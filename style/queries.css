@@ -1,0 +1,88 @@
+/* LAPTOPS */
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+
+  .hero-container {
+    margin-top: 4.5rem;
+  }
+}
+
+/* TABLETS */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .navbar-btn {
+    display: block;
+  }
+
+  .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #343a40;
+    width: 30rem;
+    height: 100vh;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 1.5rem 1rem 0;
+    transition: 0.3s linear;
+  }
+
+  .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar-nav .navbar-link {
+    color: #f1f3f5;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .navbar-nav .navbar-link:hover {
+    color: #c1c2c4;
+  }
+
+  .navbar-nav .navbar-link::after {
+    transform-origin: 0 0;
+    border-bottom: 2px solid #f1f3f5;
+  }
+
+  .navbar-nav .navbar-link:hover::after {
+    transform: scaleX(0.5);
+  }
+
+  .hero-container {
+    margin-top: 9.5rem;
+  }
+
+  .about-img-container .about-img {
+    max-width: 45%;
+  }
+}
+
+/* MOBILE PHONE */
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 55%;
+  }
+
+  .hero-container {
+    margin-top: 14rem;
+  }
+
+  .exp-container {
+    flex-wrap: wrap;
+  }
+
+  .exp-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
